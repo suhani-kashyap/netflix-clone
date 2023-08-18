@@ -27,7 +27,7 @@ function PlansScreen() {
                 })
             })
         })
-    }, [])
+    });
 
     useEffect(() => {
         db.collection('products').where('active','==',true).get().then(querySnapshot => {
